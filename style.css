@@ -1,0 +1,68 @@
+.wrapper {
+  width: 90%;
+  min-height: 90vh;
+  margin: 100px auto 0;
+}
+
+.convert_text {
+  width: 100%;
+  display: flex;
+}
+
+#text {
+    font-size: 20px;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 8px;
+    width: 80%;
+    margin-right:10px ;
+  }
+  #submit {
+   font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    width: 20%;
+    cursor: pointer;
+    background: #7d96b0;
+    color: #fff;
+  }
+
+  #submit:hover {
+    background: #254260;
+  }
+
+.output_text {
+    width: 100%;
+    margin: 10px auto;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.copy_button {
+    width: 20%;
+    margin: 10px auto;
+    font-size: .8rem;
+    font-weight: 400;
+    padding: 7px;
+    cursor: pointer;
+    color: green;
+}
+
+.status_class {
+    font-size: 10px;
+    margin: 0;
+    color: green;
+}
+.copy_right {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 400;
+    font-style: italic;
+    display: block;
+    color: #435fae;
+    text-decoration: none;
+}
