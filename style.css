@@ -37,6 +37,7 @@
     margin: 10px auto;
     font-size: 1rem;
     font-weight: 400;
+    word-break: break-all;
 }
 
 .copy_button {
