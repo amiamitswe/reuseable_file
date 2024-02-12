@@ -4,8 +4,8 @@ const convertTextFn = e => {
   const inputData = document.getElementById('text').value;
   const convertedData = inputData
     .replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '')
-    .replace(/\s/g, '_')
-    .toUpperCase();
+    .replace(/\s/g, '_');
+    // .toUpperCase();
   const formatOutput = `const ${convertedData} = '${inputData}';`;
   document.getElementById('text').value = '';
 
@@ -29,11 +29,9 @@ const convertTextFn = e => {
 
 const copyFunction = () => {
   const copyText = document.getElementById('output');
-  const copyText2 = document.getElementById('output2');
   const temp = document.createElement('textarea');
   document.body.appendChild(temp);
   temp.value = copyText.innerText;
-  temp.value = copyText2.innerText;
   temp.select();
   document.execCommand('copy');
 
