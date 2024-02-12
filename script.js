@@ -29,9 +29,11 @@ const convertTextFn = e => {
 
 const copyFunction = () => {
   const copyText = document.getElementById('output');
+  const copyText2 = document.getElementById('output2');
   const temp = document.createElement('textarea');
   document.body.appendChild(temp);
   temp.value = copyText.innerText;
+  temp.value = copyText2.innerText;
   temp.select();
   document.execCommand('copy');
 
