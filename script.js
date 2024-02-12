@@ -4,7 +4,7 @@ const convertTextFn = e => {
   const inputData = document.getElementById('text').value;
   const convertedData = inputData
     .replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '')
-    .replace(/\s/g, '_');
+    .replace(/\s/g, '_').toLowerCase();
     // .toUpperCase();
   const formatOutput = `const ${convertedData} = '${inputData}';`;
   document.getElementById('text').value = '';
